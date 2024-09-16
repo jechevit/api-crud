@@ -1,0 +1,14 @@
+parameters:
+    bootstrapFiles:
+        - vendor/yiisoft/yii2/Yii.php
+    level: 6
+    paths:
+        - controllers
+        - models
+        - views
+        - commands
+        - migrations
+        - widgets
+        - services
+        - repositories
+        - forms
