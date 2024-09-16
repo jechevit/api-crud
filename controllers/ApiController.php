@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\controllers\behaviors\DebugBehavior;
 use app\exceptions\ValidateException;
 use app\forms\GuestForm;
 use app\repositories\GuestRepository;
@@ -50,6 +51,9 @@ class ApiController extends Controller
                     'application/json' => Response::FORMAT_JSON,
                     'application/xml' => Response::FORMAT_XML,
                 ],
+            ],
+            'debug' => [
+                'class' => DebugBehavior::class,
             ],
         ];
     }
